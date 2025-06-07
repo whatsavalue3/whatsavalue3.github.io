@@ -11,6 +11,6 @@
 |**hardness**|Float|How hard it is to mine this block.|`0`|
 |**toughness**|Float|How explosion resistant this block is.|`0`|
 |**step_sound**|StepSound|Sound this block makes|`STONE`|
-|**light_value**|Float|How much light this block emits. Range: `0.0 - 1.0`|`0`|
-|**light_opacity**|Integer|How much light this block lets through. Range: `0 - 255`|`0`|
+|**light_value**|Float|How much light this block emits. Range: `0.0 - 1.0` | `0`|
+|**light_opacity**|Integer|How much light this block lets through. Range: `0 - 255` | `0`|
 |**opaque_cube**|Boolean|Does this block obscure faces around it. Change this if you have issues with xraying faces|`true`|
