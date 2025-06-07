@@ -17,7 +17,9 @@ Optional
 
 ## Examples
 
-> ```ini
+---
+
+```ini
 [Instance]
 id=example/templates/combine_recipe_and_block
 
@@ -26,8 +28,10 @@ item1=dirt
 item2=gravel
 result=coarse_dirt
 ```
-> 
-> ```ini
+
+example/templates/combine_recipe_and_block:
+
+```ini
 [Template]
 
 [Template.Block]
@@ -40,3 +44,5 @@ pattern=[AB]
 palette=[A,{item1},B,{item2}]
 result_id={result}
 ```
+
+---
