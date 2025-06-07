@@ -9,6 +9,6 @@
 
 ```ini
 [Item]
-id={name}_dye
-texture=b1.2/items/{name}_dye
+id=red_dye
+texture=example/items/red_dye
 ```
