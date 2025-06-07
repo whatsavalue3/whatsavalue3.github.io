@@ -1,12 +1,12 @@
 # Smelting
 
-|Property|Type|Description|Default value|
-|-|-|-|-|
-|**ingredient**|String|Id of the inngredient to use||
-|**result_id**|String|Id of the result||
+## Properties
+### `ingredient` ([String](../Types.md#String))
+The block/item that is smelted.
+### `result_id` ([String](../Types.md#String))
+The block/item obtained from this recipe.
 
 # Examples
-
 ```ini
 [Smelting]
 ingredient=cactus

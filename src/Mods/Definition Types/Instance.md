@@ -1,24 +1,29 @@
 # Instance
+Instances allow for registering things in bulk by replacing specific parts using Arguments.
 
-|Property|Type|Description|Default value|
-|-|-|-|-|
-|**id**|String|Path to the template to instantiate.||
+## Properties
+### `id` ([String](../Types.md#String))
+The only property that an Instance has. Path to the Template that will be used.
+> **Note:** Template must be given as `(modname)/filename` (no extension)
 
 ## Subsections
+Definitions can have subsections specified by a `.` in the section name, followed by the subsections name.
 
 ### Args
+A list of key-value pairs for each replacement a Template may have.
 
-Optional
+# Template
+Templates contain things that an Instance may request to register, alongside placeholder strings that are replaced with Arguments that are given by an Instance.
 
-|Property|Type|Description|Default value|
-|-|-|-|-|
-|**\***|String|Argument that gets passed to the template.||
+## Properties
+Templates lack any sort of properties, instead inheriting them from Subsections.
 
+Refer to [Block](Block.md), [Item](Block.md), [Recipe](Block.md) and [Smeltig](Block.md) for their respective properties.
 
-## Examples
+## Subsections
+By adding a usual definition to a `Template` subsection it can be used inside a Template, which allows the definitions to contain `{placeholder}` strings that an Instance can replace.
 
----
-
+# Examples
 ```ini
 [Instance]
 id=example/templates/combine_recipe_and_block
@@ -28,9 +33,7 @@ item1=dirt
 item2=gravel
 result=coarse_dirt
 ```
-
-example/templates/combine_recipe_and_block:
-
+in `example/templates/combine_recipe_and_block`:
 ```ini
 [Template]
 

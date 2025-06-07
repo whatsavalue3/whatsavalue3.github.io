@@ -1,15 +1,26 @@
 # Recipe
 
-|Property|Type|Description|Default value|
-|-|-|-|-|
-|**pattern**|Array|Rows of the recipe, each *character* corresponds to an item in the palette.||
-|**palette**|Array|Pairs of a single character and the id it corresponds to. Even positions have the character, odd positions have the id||
-|**result_id**|String|Id of the result||
-|**result_amount**|Integer|Amount of the resulting item crafted|1|
-|**result_damage**|Integer|Damage of the resulting item crafted|0|
+### `pattern` ([StringArray](../Types.md#StringArray))
+Rows of the recipe, each character in a row corresponds to an item in the palette.
+
+### `palette` ([Array](../Types.md#Array))
+Pairs of a single character and the item/block id it should match to.
+
+### `result_id` ([String](../Types.md#String))
+The block/item obtained from this recipe.
+
+### `result_amount` ([Integer](../Types.md#Integer))
+Amount of crafted blocks/items.
+
+Default: `1`
+
+### `result_damage` ([Integer](../Types.md#Integer))
+Damage that the crafted item has. This can only be used on tools and armor.
+
+Default: `0`
 
 # Examples
-
+Several items example:
 ```ini
 [Recipe]
 pattern=[###,###,###]
@@ -17,11 +28,10 @@ palette=[#,cobblestone]
 result_id=armored_cobblestone
 result_amount=2
 ```
-
-
+Shapeless with several items example:
 ```ini
 [Recipe]
 pattern=[#D]
-palette=[#,wool,D,red_dye]
+palette=[#,wool, D,red_dye]
 result_id=red_wool
 ```

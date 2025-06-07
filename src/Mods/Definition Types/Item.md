@@ -1,9 +1,12 @@
 # Item
 
-|Property|Type|Description|Default value|
-|-|-|-|-|
-|**id**|String|Id of the item. Must be unique.||
-|**texture**|String|Texture of the item to use.||
+## Properties
+### `id` ([String](../Types.md#String))
+The internal ID of the item. 
+Must be unique.
+
+### `texture` ([String](../Types.md#String))
+Textures of the item.
 
 # Examples
 
