@@ -14,6 +14,11 @@ Default: `tile.{id}`
 Textures of the block.[⁽¹⁾](#Textures)
 > **Note:** Texture must be given as `(modname)/filename` (no extension)
 
+### `fill_textures` ([Boolean](../Types.html#Boolean))
+Disables the automatic configuration of textures.
+Used for render types[⁽²⁾](#Render%20Types) or debugging.
+
+
 ### `bbox` ([Bbox](../Types.html#Bbox))
 The shape of the block.
 
@@ -76,19 +81,19 @@ Despite the fact that the textures array expects 6 entries (for bottom, top, fro
 
 ### [⁽²⁾](#render_type) Render types
 There are several possible values built-in values that can be used to define how a block looks like: 
-- `-1`: Entity model (sign)
+- `-1`: Entity model (sign, invisible)
 - `1`: Plant (flowers, reeds)
 - `2`: Torch
 - `3`: Fire
-- `4`: Fluid (water, lava)
+- `4`: Fluid (water, lava) **(CRASH)**
 - `5`: Redstone wire
 - `6`: Crop (wheat)
-- `7`: Door
-- `8`: Ladder
+- `7`: Door **(CRASH)**
+- `8`: Ladder (invisible)
 - `9`: Minecart track
 - `10`: Stairs
 - `11`: Fence
-- `12`: Lever
+- `12`: Lever (forces cobblestone texture)
 - `13`: Cactus
 > **Warning:** Most of these are untested and are very unlikely to work correctly.
 
