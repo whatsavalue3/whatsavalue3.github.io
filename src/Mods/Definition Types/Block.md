@@ -11,7 +11,8 @@ Translation key for the inventory tooltip.
 Default: `tile.{id}`
 
 ### `textures` ([Array](../Types.md#Array))
-Textures of the block.[[1]](#Textures)
+Textures of the block.[[1]][Textures]
+
 > **Note:** Texture must be given as `(modname)/filename` (no extension)
 
 ### `bbox` ([Bbox](../Types.md#Bbox))
@@ -61,13 +62,14 @@ Usually used for transparent blocks like leaves.
 Default: `true`
 
 ### `render_type` ([Integer](../Types.md#Integer))
-The shape that the block looks like.[[2]](#Render types)
+The shape that the block looks like.[[2]][Render Types]
 > **Note:** If `render_type` is not 0 then `opaque_cube` is forced to `false` to prevent visual artifacts.
 
 Default: `0` (full block)
 
 ## Notes
-
+[Textures]: #Textures
+[Render Types]: #Render%20types
 ### Textures
 Despite the fact that the textures array expects 6 entries (for bottom, top, front, back, right and left faces), there are several predefined configurations that can be used for easier texture applying:
 - If there is only one texture, it is applied on all faces
