@@ -19,7 +19,7 @@
 ```ini
 [Block]
 id = armored_cobblestone
-texture = example/blocks/armored_cobblestone
+textures = [example/blocks/armored_cobblestone]
 hardness = 3
 resistance = 20
 material = ROCK
@@ -29,7 +29,7 @@ material = ROCK
 ```ini
 [Block]
 id = cobblestone_pole
-texture = blocks/cobblestone
+textures = [blocks/cobblestone]
 bbox = [0.25,0,0.25,0.75,1,0.75]
 opaque_cube = false
 hardness = 2
