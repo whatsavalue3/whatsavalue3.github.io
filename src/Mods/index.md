@@ -2,7 +2,7 @@
 
 A mod is a self-contained bunch of definition files (`.ini`) and textures which are loaded and parsed by Alphabase. 
 
-Mods allow new content like [blocks](Definition%20Types/Block.md), [items](Definition%20Types/Item.md) and [crafting](Definition%20Types/Recipe.md) [recipes](Definition%20Types/Smelting.md) with [convenience](Definition%20Types/Instance.md) to be added into the game at runtime.
+Mods allow new content like [blocks](Definition%20Types/Block.html), [items](Definition%20Types/Item.html) and [crafting](Definition%20Types/Recipe.html) [recipes](Definition%20Types/Smelting.html) with [convenience](Definition%20Types/Instance.html) to be added into the game at runtime.
 
 Mods can be installed both on client and server by putting them into `.minecraft/mods/`, if installed on a server they will be automatically sent from the server to each client.
 They function similar to datapacks due to the fact that they do not require any modifications to base code.

@@ -2,7 +2,7 @@
 Instances allow for registering things in bulk by replacing specific parts using Arguments.
 
 ## Properties
-### `id` ([String](../Types.md#String))
+### `id` ([String](../Types.html#String))
 The only property that an Instance has. Path to the Template that will be used.
 > **Note:** Template must be given as `(modname)/filename` (no extension)
 
@@ -18,7 +18,7 @@ Templates contain things that an Instance may request to register, alongside pla
 ## Properties
 Templates lack any sort of properties, instead inheriting them from Subsections.
 
-Refer to [Block](Block.md), [Item](Block.md), [Recipe](Block.md) and [Smeltig](Block.md) for their respective properties.
+Refer to [Block](Block.html), [Item](Block.html), [Recipe](Block.html) and [Smeltig](Block.html) for their respective properties.
 
 ## Subsections
 By adding a usual definition to a `Template` subsection it can be used inside a Template, which allows the definitions to contain `{placeholder}` strings that an Instance can replace.

@@ -1,83 +1,80 @@
 # Block
 
 ## Properties
-### `id` ([String](../Types.md#String))
+### `id` ([String](../Types.html#String))
 The internal ID of the block. 
 Must be unique.
 
-### `name` ([String](../Types.md#String))
+### `name` ([String](../Types.html#String))
 Translation key for the inventory tooltip.
 
 Default: `tile.{id}`
 
-### `textures` ([Array](../Types.md#Array))
-Textures of the block.
-
+### `textures` ([Array](../Types.html#Array))
+Textures of the block.[⁽¹⁾](#Textures)
 > **Note:** Texture must be given as `(modname)/filename` (no extension)
 
-### `bbox` ([Bbox](../Types.md#Bbox))
+### `bbox` ([Bbox](../Types.html#Bbox))
 The shape of the block.
 
 Default: `[0,0,0,1,1,1]` (full block)
 
-### `material` ([Material](../Types.md#Material))
+### `material` ([Material](../Types.html#Material))
 The material that the block uses for digging.
 
 Default: `STONE`
 
-### `step_sound` ([StepSound](../Types.md#StepSound))
+### `step_sound` ([StepSound](../Types.html#StepSound))
 The sound that is emitted when an entity walks ontop or digs the block.
 
 Default: `STONE`
 
-### `hardness` ([Float](../Types.md#Float))
+### `hardness` ([Float](../Types.html#Float))
 The hardness of the block. 
 Affects digging time; higher is slower.
 
 Default: `0.0`
 
-### `toughness` ([Float](../Types.md#Float))
+### `toughness` ([Float](../Types.html#Float))
 The resistance against explosions of the block. 
 Higher is more resistant.
 
 Default: `0.0`
 
-### `light_value` ([Float](../Types.md#Float))
+### `light_value` ([Float](../Types.html#Float))
 The amount of light the block emits.
 Must be in range from `0.0` to `1.0`.
 
 Default: `0.0`
 
-### `light_opacity` ([Integer](../Types.md#Integer))
+### `light_opacity` ([Integer](../Types.html#Integer))
 The amount of light the block passes trough itself.
 Must be in range from `0` to `255`.
 
 Default: `0`
 
-### `opaque_cube` ([Boolean](../Types.md#Boolean))
+### `opaque_cube` ([Boolean](../Types.html#Boolean))
 Disables culling of neighbouring faces.
 Usually used for transparent blocks like leaves.
 > **Note:** Set to `false` if the block creates holes in blocks.
 
 Default: `true`
 
-### `render_type` ([Integer](../Types.md#Integer))
-The shape that the block looks like.
+### `render_type` ([Integer](../Types.html#Integer))
+The shape that the block looks like.[⁽²⁾](#Render%20Types)
 > **Note:** If `render_type` is not 0 then `opaque_cube` is forced to `false` to prevent visual artifacts.
 
 Default: `0` (full block)
 
 ## Notes
-[Textures]: #Textures
-[Render Types]: #Render%20types
-### Textures
+### [⁽¹⁾](#textures) Textures
 Despite the fact that the textures array expects 6 entries (for bottom, top, front, back, right and left faces), there are several predefined configurations that can be used for easier texture applying:
 - If there is only one texture, it is applied on all faces
 - If there are 2 textures, 1st texture is applied to bottom and top, and the 2nd one is applied to the rest of the faces
 - If there are 3 textures, 1st and 2nd textures are applied to the bottom and top faces, and the 3rd one is applied to the rest of the faces
 - If there are more than 3 textures but less than 6, the game will crash
 
-### Render types
+### [⁽²⁾](#render_type) Render types
 There are several possible values built-in values that can be used to define how a block looks like: 
 - `-1`: Entity model (sign)
 - `1`: Plant (flowers, reeds)

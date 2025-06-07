@@ -1,20 +1,20 @@
 # Recipe
 
-### `pattern` ([StringArray](../Types.md#StringArray))
+### `pattern` ([StringArray](../Types.html#StringArray))
 Rows of the recipe, each character in a row corresponds to an item in the palette.
 
-### `palette` ([Array](../Types.md#Array))
+### `palette` ([Array](../Types.html#Array))
 Pairs of a single character and the item/block id it should match to.
 
-### `result_id` ([String](../Types.md#String))
+### `result_id` ([String](../Types.html#String))
 The block/item obtained from this recipe.
 
-### `result_amount` ([Integer](../Types.md#Integer))
+### `result_amount` ([Integer](../Types.html#Integer))
 Amount of crafted blocks/items.
 
 Default: `1`
 
-### `result_damage` ([Integer](../Types.md#Integer))
+### `result_damage` ([Integer](../Types.html#Integer))
 Damage that the crafted item has. This can only be used on tools and armor.
 
 Default: `0`
