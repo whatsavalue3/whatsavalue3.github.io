@@ -10,7 +10,7 @@
 
 # Examples
 
-```
+```ini
 [Recipe]
 pattern=[###,###,###]
 palette=[#,cobblestone]
@@ -19,7 +19,7 @@ result_amount=2
 ```
 
 
-```
+```ini
 [Recipe]
 pattern=[#D]
 palette=[#,wool,D,red_dye]
