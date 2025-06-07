@@ -11,7 +11,7 @@ Translation key for the inventory tooltip.
 Default: `tile.{id}`
 
 ### `textures` ([Array](../Types.md#Array))
-Textures of the block.[[1]][Textures]
+Textures of the block.
 
 > **Note:** Texture must be given as `(modname)/filename` (no extension)
 
@@ -62,7 +62,7 @@ Usually used for transparent blocks like leaves.
 Default: `true`
 
 ### `render_type` ([Integer](../Types.md#Integer))
-The shape that the block looks like.[[2]][Render Types]
+The shape that the block looks like.
 > **Note:** If `render_type` is not 0 then `opaque_cube` is forced to `false` to prevent visual artifacts.
 
 Default: `0` (full block)
