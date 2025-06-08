@@ -46,7 +46,7 @@ def IterateFileTree(filedict,path,parentexpanded):
 	global filetree
 	currentfile = path[1:].replace(".md","")
 	for key, value in filedict.items():
-		if isinstance(value, dict):
+		if isinstance(value, dict) and len(value.values()) != 0:
 			classname = "nested"
 			expandicon = "+"
 			expanded = False
