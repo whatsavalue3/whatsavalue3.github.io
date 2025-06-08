@@ -4,7 +4,7 @@ import os
 import re
 import shutil
 
-mark = markdown2.Markdown(extras={"tables":True,"fenced-code-blocks":None,"code-friendly":True,"break-on-newline":True,"markdown-in-html":True})
+mark = markdown2.Markdown(extras={"header-ids":True, "footnotes":True,"tables":True,"fenced-code-blocks":None,"code-friendly":True,"break-on-newline":True,"markdown-in-html":True})
 
 rootpath = os.path.dirname(os.path.realpath(__file__))
 src = rootpath+"/src/"
