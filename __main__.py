@@ -17,6 +17,9 @@ shutil.copytree(assets,dst)
 with open("template.html","r") as f:
 	template = f.read()
 
+with open("dst/script.js","r") as f:
+	scriptjs = f.read()
+
 documentlist = []
 namelist = []
 filetreedict = {}
@@ -184,7 +187,10 @@ def ConvertToHtml(fpath):
 		return ConvertStrToHtml(rawmarkdown)
 		
 
-template = template.replace("@DOCUMENTLIST",str(documentlist)).replace("@NAMELIST",str(namelist))
+scriptjs = scriptjs.replace("@DOCUMENTLIST",str(documentlist)).replace("@NAMELIST",str(namelist))
+
+with open("dst/script.js","w") as f:
+	f.write(scriptjs)
 
 for root, subdirs, files in os.walk(src):
 	if(not os.path.exists(dst+root[len(src):])):
