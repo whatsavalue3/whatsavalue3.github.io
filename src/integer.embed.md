@@ -1,0 +1,1 @@
+$_SPANFRAME $_SMALL [Integer](../Types.html#integer) _$ _$
