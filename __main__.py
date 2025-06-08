@@ -157,7 +157,10 @@ def ConvertStrToHtml(rawmarkdown : str):
 			for arg in path_and_args[1:]:
 				embedcontent = embedcontent.replace("$"+str(i)+"$", arg)
 				i+=1
-		rawmarkdown = rawmarkdown.replace(embed, ConvertStrToHtml(embedcontent))
+		embedconverted = ConvertStrToHtml(embedcontent)
+		if embedconverted.startswith("<p>"):
+			embedconverted = embedconverted[3:-5]
+		rawmarkdown = rawmarkdown.replace(embed, embedconverted)
 	links = re.findall(r'\[[^\[^\]]+\]\[[^\[^\]]+\]',rawmarkdown)
 	for link in links:
 		name = link[1:].split("]",1)[0]
