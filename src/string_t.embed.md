@@ -1,1 +1,1 @@
-$_INLINEFRAME [String](../Types.html#string) _$
+$_SPANFRAME [String](../Types.html#string) _$

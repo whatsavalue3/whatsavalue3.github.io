@@ -98,6 +98,9 @@ def ConvertStrToHtml(rawmarkdown : str):
                 elif dollarsnippet.startswith("RIGHTFRAME"):
                     dollarname = "RIGHTFRAME"
                     i+=10
+				elif dollarsnippet.startswith("SPANFRAME"):
+                    dollarname = "SPANFRAME"
+                    i+=9
                 elif dollarsnippet.startswith("BUTTON"):
                     dollarname = "BUTTON"
                     i+=6
@@ -118,6 +121,8 @@ def ConvertStrToHtml(rawmarkdown : str):
                     snippet = "<div class=\"rightframed\"><div class=\"rightframedinside\">"+snippet+"</div></div>"
                 elif dollarname == "INLINEFRAME":
                     snippet = f"<div class=\"inlineframed\"><div class=\"inlineframedinside\">{snippet}</div></div>"
+				elif dollarname == "SPANFRAME":
+                    snippet = f"<span class=\"spanframed\"><span class=\"spanframedinside\">{snippet}</span></span>"
                 elif dollarname == "BUTTON":
                     snippet = "<span class=\"buttoned\">"+snippet.strip().replace("<p>","").replace("</p>","")+"</span>"
                 rawmarkdown = rawmarkdown[:tocut]+snippet+rawmarkdown[i+2:]
