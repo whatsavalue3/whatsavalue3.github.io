@@ -3,13 +3,12 @@
 ## Properties
 ### `id` ([String](../Types.html#String))
 The internal ID of the item. 
-Must be unique.
+Required and must be unique.
 
 ### `texture` ([String](../Types.html#String))
-Textures of the item.
+Texture of the item.
 
 # Examples
-
 ```ini
 [Item]
 id=red_dye
