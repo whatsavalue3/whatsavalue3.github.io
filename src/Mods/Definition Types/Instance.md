@@ -26,12 +26,12 @@ By adding a usual definition to a `Template` subsection it can be used inside a 
 # Examples
 ```ini
 [Instance]
-id=example/templates/combine_recipe_and_block
+id = example/templates/combine_recipe_and_block
 
 [Instance.Args]
-item1=dirt
-item2=gravel
-result=coarse_dirt
+item1 = dirt
+item2 = gravel
+result = coarse_dirt
 ```
 in `example/templates/combine_recipe_and_block`:
 ```ini
@@ -43,8 +43,8 @@ texture = example/blocks/{result}
 hardness = 0.8
 
 [Template.Recipe]
-pattern=[AB]
-palette=[A,{item1},B,{item2}]
-result_id={result}
+pattern = [AB]
+palette = [A,{item1}, B,{item2}]
+result_id = {result}
 ```
 ---

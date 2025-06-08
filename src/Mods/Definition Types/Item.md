@@ -11,6 +11,6 @@ Texture of the item.
 # Examples
 ```ini
 [Item]
-id=red_dye
-texture=example/items/red_dye
+id = red_dye
+texture = example/items/red_dye
 ```

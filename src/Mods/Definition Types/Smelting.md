@@ -10,6 +10,6 @@ The block/item obtained from this recipe.
 # Examples
 ```ini
 [Smelting]
-ingredient=cactus
-result_id=green_dye
+ingredient = cactus
+result_id = green_dye
 ```

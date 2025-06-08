@@ -23,15 +23,15 @@ Default: `0`
 Several items example:
 ```ini
 [Recipe]
-pattern=[###,###,###]
-palette=[#,cobblestone]
-result_id=armored_cobblestone
-result_amount=2
+pattern = [###,###,###]
+palette = [#,cobblestone]
+result_id = armored_cobblestone
+result_amount = 2
 ```
 Shapeless with several items example:
 ```ini
 [Recipe]
-pattern=[#D]
-palette=[#,wool, D,red_dye]
-result_id=red_wool
+pattern = [#D]
+palette = [#,wool, D,red_dye]
+result_id = red_wool
 ```
