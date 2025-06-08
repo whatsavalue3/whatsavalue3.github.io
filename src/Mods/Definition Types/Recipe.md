@@ -6,7 +6,7 @@ Rows of the recipe, each character in a row corresponds to an item in the palett
 ### `palette` ([Array](../Types.html#array))
 Pairs of a single character and the item/block id it should match to.
 
-### `result_id` ([String](../Types.html#string))
+### `result_id` {{string_t}}
 The block/item obtained from this recipe.
 
 ### `result_amount` ([Integer](../Types.html#integer))
