@@ -1,72 +1,72 @@
 # Block
 
 ## Properties
-### `id` ([String](../Types.html#String))
+### `id` ([String](../Types.html#string))
 The internal ID of the block. 
 Required and must be unique.
 
-### `name` ([String](../Types.html#String))
+### `name` ([String](../Types.html#string))
 Translation key for the inventory tooltip.
 
 Default: `tile.{id}`
 
-### `textures` ([Array](../Types.html#Array))
+### `textures` ([Array](../Types.html#array))
 Textures of the block.[⁽¹⁾](#Textures)
 > **Note:** Textures must be given in a path format of `(mod name)/path/to/filename` and must not have the `textures` folder or the extension of the file (`.png`) in the path.
 
-### `fill_textures` ([Boolean](../Types.html#Boolean))
+### `fill_textures` ([Boolean](../Types.html#boolean))
 Disables the automatic configuration of textures.
 Used for render types[⁽²⁾](#Render%20Types) or debugging.
 
 Default: `true`
 
-### `bbox` ([Bbox](../Types.html#Bbox))
+### `bbox` ([Bbox](../Types.html#bbox))
 The shape of the block.
 
 Default: `[0,0,0,1,1,1]` (full block)
 
-### `material` ([Material](../Types.html#Material))
+### `material` ([Material](../Types.html#material))
 The material that the block uses for digging.
 
 Default: `STONE`
 
-### `step_sound` ([StepSound](../Types.html#StepSound))
+### `step_sound` ([StepSound](../Types.html#stepsound))
 The sound that is emitted when an entity walks on the block or digs the block.
 
 Default: `STONE`
 
-### `hardness` ([Float](../Types.html#Float))
+### `hardness` ([Float](../Types.html#float))
 The hardness of the block. 
 Affects digging time; higher is slower.
 
 Default: `0.0`
 
-### `toughness` ([Float](../Types.html#Float))
+### `toughness` ([Float](../Types.html#float))
 The resistance of the block against explosions. 
 Higher is more resistant.
 
 Default: `0.0`
 
-### `light_value` ([Float](../Types.html#Float))
+### `light_value` ([Float](../Types.html#float))
 The amount of light the block emits.
 Must be in range from `0.0` to `1.0`.
 
 Default: `0.0`
 
-### `light_opacity` ([Integer](../Types.html#Integer))
+### `light_opacity` ([Integer](../Types.html#integer))
 The amount of light the block passes through itself.
 Must be in range from `0` to `255`.
 
 Default: `0`
 
-### `opaque_cube` ([Boolean](../Types.html#Boolean))
+### `opaque_cube` ([Boolean](../Types.html#boolean))
 Toggles culling of neighbouring faces.
 Usually used for transparent blocks like leaves.
 > **Note:** Set to `false` if the block creates transparent sides in blocks that are next to it.
 
 Default: `true`
 
-### `render_type` ([Integer](../Types.html#Integer))
+### `render_type` ([Integer](../Types.html#integer))
 The shape that the block looks like.[⁽²⁾](#Render%20Types)
 > **Note:** If `render_type` is not 0 then `opaque_cube` is forced to `false` to prevent visual artifacts.
 

@@ -2,7 +2,7 @@
 Instances allow for registering things in bulk by replacing specific parts using Arguments.
 
 ## Properties
-### `id` ([String](../Types.html#String))
+### `id` ([String](../Types.html#string))
 The only property that an Instance has. Path to the Template that will be used.
 > **Note:** Template must be given as `(modname)/filename` (no extension)
 

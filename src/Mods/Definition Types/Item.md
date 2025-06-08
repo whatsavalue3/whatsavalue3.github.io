@@ -1,11 +1,11 @@
 # Item
 
 ## Properties
-### `id` ([String](../Types.html#String))
+### `id` ([String](../Types.html#string))
 The internal ID of the item. 
 Required and must be unique.
 
-### `texture` ([String](../Types.html#String))
+### `texture` ([String](../Types.html#string))
 Texture of the item.
 
 # Examples

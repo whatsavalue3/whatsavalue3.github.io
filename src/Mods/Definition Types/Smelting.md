@@ -4,12 +4,12 @@
 
 ---
 
-### `ingredient` ([String](../Types.html#String))
+### `ingredient` ([String](../Types.html#string))
 The block/item that is smelted.
 
 ---
 
-### `result_id` ([String](../Types.html#String))
+### `result_id` ([String](../Types.html#string))
 The block/item obtained from this recipe.
 
 ---
