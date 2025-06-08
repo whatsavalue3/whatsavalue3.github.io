@@ -114,7 +114,7 @@ def ConvertStrToHtml(rawmarkdown : str):
 				if dollarname != "COMMENT":
 					snippet = ConvertStrToHtml(rawmarkdown[beginningdollar:i].strip()).strip()
 				if dollarname == "SMALL":
-					snippet = "<small style=\"position:relative; top:8px; margin:0px;\">"+snippet.strip().replace("<p>","").replace("</p>","")+"</small>"
+					snippet = "<small>"+snippet.strip().replace("<p>","").replace("</p>","")+"</small>"
 				elif dollarname == "FRAME":
 					snippet = "<div class=\"framed\"><div class=\"framedinside\">"+snippet+"</div></div>"
 				elif dollarname == "RIGHTFRAME":
