@@ -5,68 +5,68 @@
 The internal ID of the block. 
 Required and must be unique.
 
-### `name` ([String](../Types.html#string))
+### `name` {{string_t}}
 Translation key for the inventory tooltip.
 
 Default: `tile.{id}`
 
-### `textures` ([Array](../Types.html#array))
+### `textures` {{array_t}}
 Textures of the block.[⁽¹⁾](#Textures)
 > **Note:** Textures must be given in a path format of `(mod name)/path/to/filename` and must not have the `textures` folder or the extension of the file (`.png`) in the path.
 
-### `fill_textures` ([Boolean](../Types.html#boolean))
+### `fill_textures` {{boolean_t}}
 Disables the automatic configuration of textures.
 Used for render types[⁽²⁾](#Render%20Types) or debugging.
 
 Default: `true`
 
-### `bbox` ([Bbox](../Types.html#bbox))
+### `bbox` {{bbox_t}}
 The shape of the block.
 
 Default: `[0,0,0,1,1,1]` (full block)
 
-### `material` ([Material](../Types.html#material))
+### `material` {{material_t}}
 The material that the block uses for digging.
 
 Default: `STONE`
 
-### `step_sound` ([StepSound](../Types.html#stepsound))
+### `step_sound` {{stepsound_t}}
 The sound that is emitted when an entity walks on the block or digs the block.
 
 Default: `STONE`
 
-### `hardness` ([Float](../Types.html#float))
+### `hardness` {{float_t}}
 The hardness of the block. 
 Affects digging time; higher is slower.
 
 Default: `0.0`
 
-### `toughness` ([Float](../Types.html#float))
+### `toughness` {{float_t}}
 The resistance of the block against explosions. 
 Higher is more resistant.
 
 Default: `0.0`
 
-### `light_value` ([Float](../Types.html#float))
+### `light_value` {{float_t}}
 The amount of light the block emits.
 Must be in range from `0.0` to `1.0`.
 
 Default: `0.0`
 
-### `light_opacity` ([Integer](../Types.html#integer))
+### `light_opacity` {{integer_t}}
 The amount of light the block passes through itself.
 Must be in range from `0` to `255`.
 
 Default: `0`
 
-### `opaque_cube` ([Boolean](../Types.html#boolean))
+### `opaque_cube` {{boolean_t}}
 Toggles culling of neighbouring faces.
 Usually used for transparent blocks like leaves.
 > **Note:** Set to `false` if the block creates transparent sides in blocks that are next to it.
 
 Default: `true`
 
-### `render_type` ([Integer](../Types.html#integer))
+### `render_type` {{integer_t}}
 The shape that the block looks like.[⁽²⁾](#Render%20Types)
 > **Note:** If `render_type` is not 0 then `opaque_cube` is forced to `false` to prevent visual artifacts.
 
