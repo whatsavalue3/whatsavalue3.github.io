@@ -27,10 +27,12 @@ for root, subdirs, files in os.walk(src):
 	if root[lensrc:]:
 		for x in root[lensrc:].replace("\\","/").split("/"):
 			p = p.setdefault(x, {})
-	p[''] = []
+	
 	for file in files:
 		if file.endswith(".embed.md"):
 			continue
+		if '' not in p:
+			p[''] = []
 		fpath = os.path.join(root, file)
 		with open(fpath,"r") as f:
 			rawmarkdown = f.read()
@@ -46,18 +48,19 @@ def IterateFileTree(filedict,path,parentexpanded):
 	global filetree
 	currentfile = path[1:].replace(".md","")
 	for key, value in filedict.items():
-		if isinstance(value, dict) and len(value.values()) != 0:
-			classname = "nested"
-			expandicon = "+"
-			expanded = False
-			if "/"+key+"/" in path and parentexpanded:
-				classname += " active"
-				expandicon = "-"
-				expanded = True
-			
-			filetree += f"<li class=\"sidebar\"><small class=\"liicon\">{expandicon}</small><span onmousedown=\"toggleTree(this);\" onmouseleave=\"unPress(this);\" onmouseup=\"unPress(this);\"><span onmousedown=\"Press(this);\" onmouseleave=\"unPress(this);\" onmouseup=\"unPress(this);\">{key}</span></span>\n<ul class=\"sidebar {classname}\">\n"
-			IterateFileTree(value,path,expanded)
-			filetree += f"</ul>\n</li>\n"
+		if isinstance(value, dict):
+			if len(value.values()) != 0:
+				classname = "nested"
+				expandicon = "+"
+				expanded = False
+				if "/"+key+"/" in path and parentexpanded:
+					classname += " active"
+					expandicon = "-"
+					expanded = True
+				
+				filetree += f"<li class=\"sidebar\"><small class=\"liicon\">{expandicon}</small><span onmousedown=\"toggleTree(this);\" onmouseleave=\"unPress(this);\" onmouseup=\"unPress(this);\"><span onmousedown=\"Press(this);\" onmouseleave=\"unPress(this);\" onmouseup=\"unPress(this);\">{key}</span></span>\n<ul class=\"sidebar {classname}\">\n"
+				IterateFileTree(value,path,expanded)
+				filetree += f"</ul>\n</li>\n"
 		else:
 			for file in value:
 				if file[0] == currentfile:
