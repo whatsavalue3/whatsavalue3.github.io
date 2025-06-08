@@ -1,13 +1,14 @@
 # Instance
-Instances allow for registering things in bulk by replacing specific parts using Arguments.
+Instances allow for registering things in bulk by replacing specific parts using arguments.
 
 ## Properties
 ### `id` {{string_t}}
-The only property that an Instance has. Path to the Template that will be used.
+The only property that an instance has. This is the path to the template that will be used.
 > **Note:** Template must be given as `(modname)/filename` (no extension)
 
 ## Subsections
 Definitions can have subsections specified by a `.` in the section name, followed by the subsections name.
+Subsections can contain properties similar to usual definitions.
 
 ### Args
 A list of key-value pairs for each replacement a Template may have.

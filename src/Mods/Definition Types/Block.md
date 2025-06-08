@@ -42,20 +42,19 @@ Affects digging time; higher is slower.
 Default: `0.0`
 
 ### `toughness` {{float_t}}
-The resistance of the block against explosions. 
-Higher is more resistant.
+The resistance of the block against explosions; higher is more resistant.
 
 Default: `0.0`
 
 ### `light_value` {{float_t}}
 The amount of light the block emits.
-Must be in range from `0.0` to `1.0`.
+Must be in range from `0.0` to `1.0`; higher is brighter.
 
 Default: `0.0`
 
 ### `light_opacity` {{integer_t}}
 The amount of light the block passes through itself.
-Must be in range from `0` to `255`.
+Must be in range from `0` to `255`; higher passes less light through.
 
 Default: `0`
 
