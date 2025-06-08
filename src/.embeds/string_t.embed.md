@@ -1,1 +1,0 @@
-$_SPANFRAME $_SMALL [String](../Types.html#string) _$ _$

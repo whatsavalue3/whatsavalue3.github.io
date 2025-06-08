@@ -1,1 +1,0 @@
-$_SPANFRAME $_SMALL [Bbox](../Types.html#bbox) _$ _$

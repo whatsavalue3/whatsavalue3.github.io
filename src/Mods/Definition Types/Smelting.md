@@ -1,10 +1,14 @@
 # Smelting
-
 ## Properties
-### `ingredient` {{string_t}}
+
+---
+
+### `ingredient` {{t|String}}
 The block/item that is smelted.
 
-### `result_id` {{string_t}}
+---
+
+### `result_id` {{t|String}}
 The block/item obtained from this recipe.
 
 # Examples

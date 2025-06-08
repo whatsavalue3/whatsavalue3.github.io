@@ -1,20 +1,31 @@
 # Recipe
+## Properties
 
-### `pattern` {{stringarray_t}}
+---
+
+### `pattern` {{t|StringArray}}
 Rows of the recipe, each character in a row corresponds to an item in the palette.
 
-### `palette` {{array_t}}
+---
+
+### `palette` {{t|Array}}
 Pairs of a single character and the item/block id it should match to.
 
-### `result_id` {{string_t}}
+---
+
+### `result_id` {{t|String}}
 The block/item obtained from this recipe.
 
-### `result_amount` {{integer_t}}
+---
+
+### `result_amount` {{t|Integer}}
 Amount of crafted blocks/items.
 
 Default: `1`
 
-### `result_damage` {{integer_t}}
+---
+
+### `result_damage` {{t|Integer}}
 Damage that the crafted item has. This can only be used on tools and armor.
 
 Default: `0`

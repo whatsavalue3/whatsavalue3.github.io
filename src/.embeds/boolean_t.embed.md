@@ -1,1 +1,0 @@
-$_SPANFRAME $_SMALL [Boolean](../Types.html#boolean) _$ _$

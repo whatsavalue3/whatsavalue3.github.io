@@ -1,1 +1,0 @@
-$_SPANFRAME $_SMALL [StepSound](../Types.html#stepsound) _$ _$

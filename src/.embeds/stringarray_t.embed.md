@@ -1,1 +1,0 @@
-$_SPANFRAME $_SMALL [StringArray](../Types.html#stringarray) _$ _$

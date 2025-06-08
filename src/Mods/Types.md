@@ -1,7 +1,4 @@
 # Types
-
----
-
 ## String
 A basic string. Can contain text, numbers will be treated as text.
 Strings do not require commas and as such they will be treated literally, and must be on a single line.
