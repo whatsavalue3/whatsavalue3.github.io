@@ -1,18 +1,11 @@
 # Smelting
 
 ## Properties
-
----
-
-### `ingredient` ([String](../Types.html#string))
+### `ingredient` {{string_t}}
 The block/item that is smelted.
 
----
-
-### `result_id` ([String](../Types.html#string))
+### `result_id` {{string_t}}
 The block/item obtained from this recipe.
-
----
 
 # Examples
 ```ini

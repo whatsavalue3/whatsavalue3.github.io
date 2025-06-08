@@ -1,7 +1,7 @@
 # Block
 
 ## Properties
-### `id` ([String](../Types.html#string))
+### `id` {{string_t}}
 The internal ID of the block. 
 Required and must be unique.
 
@@ -11,7 +11,7 @@ Translation key for the inventory tooltip.
 Default: `tile.{id}`
 
 ### `textures` {{array_t}}
-Textures of the block.[⁽¹⁾](#Textures)
+Textures of the block.[⁽¹⁾](#Textures) Required.
 > **Note:** Textures must be given in a path format of `(mod name)/path/to/filename` and must not have the `textures` folder or the extension of the file (`.png`) in the path.
 
 ### `fill_textures` {{boolean_t}}
