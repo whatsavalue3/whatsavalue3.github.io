@@ -2,8 +2,8 @@
 
 ## Properties
 ### `id` {{string_t}}
-The internal ID of the block. 
-Required and must be unique.
+The internal ID of the block. Required.
+By defining a block with an existing ID, the original block will be overriden with the new one, replacing all properties.
 
 ### `name` {{string_t}}
 Translation key for the inventory tooltip.
