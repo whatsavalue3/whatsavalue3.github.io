@@ -257,3 +257,8 @@ a { /*link*/
 a:visited {
 	color: #ffffa0;
 }
+
+hr
+{
+    color: #303030;
+}
