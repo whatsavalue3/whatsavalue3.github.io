@@ -61,7 +61,7 @@ def IterateFileTree(filedict,path,parentexpanded):
 					expandicon = "-"
 					expanded = True
 				
-				filetree += f"<li class=\"sidebar\"><small class=\"liicon\">{expandicon}</small><span onmousedown=\"toggleTree(this);\" onmouseleave=\"unPress(this);\" onmouseup=\"unPress(this);\"><span onmousedown=\"Press(this);\" onmouseleave=\"unPress(this);\" onmouseup=\"unPress(this);\">{key}</span></span>\n<ul class=\"sidebar {classname}\">\n"
+				filetree += f"<li class=\"sidebar\"><small class=\"liicon\">{expandicon}</small><span onmousedown=\"Press(this); toggleTree(this)\" onmouseleave=\"unPress(this);\" onmouseup=\"unPress(this);\">{key}</span></span>\n<ul class=\"sidebar {classname}\">\n"
 				IterateFileTree(value,path,expanded)
 				filetree += f"</ul>\n</li>\n"
 		else:
