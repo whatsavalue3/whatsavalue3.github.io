@@ -1,5 +1,7 @@
+/*general page style*/
+
 body {
-	background-image: linear-gradient(#000000df), url('/background.png');
+	background-image: linear-gradient(#000000cb), url('/background.png');
 	color: white;
 	font-family: "Tahoma", sans-serif;
 	font-size: 9pt;
@@ -7,10 +9,14 @@ body {
 }
 
 /*TOPBAR*/
-.topbar {
-	background-image: linear-gradient(#000000bf), url('/background.png');
+.topbar-container {
+	background-image: linear-gradient(#000000a0), url('/background.png');
 	box-shadow: 0 -4px 8px 8px  black;
 	padding: 8px;
+}
+.topbar {
+	max-width: 1200px;
+	margin: auto;
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
@@ -38,18 +44,22 @@ body {
 	margin-right: 8px;
 	display: flex;
 	align-items: flex-start;
+	max-width: 1200px;
+	margin: auto;
 }
 /*CONTENT*/
-.content {
-	background-color: black;
-	border: 2px solid #a0a0a0;
-	margin-top: 24px;
-	padding: 8px 16px;
+.content-container {
 	flex-grow: 1;
+	margin-top: 24px;
+}
+.content {
+	background-color: #00000050;
+	border: 2px solid #a0a0a0;
+	padding: 8px 16px;
 }
 /*SIDEBAR*/
-.sidebarcontainer {
-	background-image: linear-gradient(#000000af), url('/background.png');
+.sidebar-container {
+	background-color: #00000050;
 	position: sticky;
 	top: 12px;
 	width: 200px;
@@ -59,27 +69,28 @@ body {
 	flex-shrink: 0;
 	padding: 8px;
 }
-
-.sidebarcontainer .nested {
+/*FOLDER CONTAINER*/
+.sidebar-container .nested {
 	display: none;
 }
-.sidebarcontainer ul.sidebar
+.sidebar-container ul.sidebar
 {
 	padding: 0;
 	list-style-type: none !important;
 	margin: -1px;
-	border: 1px none red;
+	margin-bottom: -2px;
 }
-.sidebarcontainer ul.sidebar ul.sidebar {
+.sidebar-container ul.sidebar ul.sidebar {
 	margin-left: 4px;
 	margin-bottom: 4px;
 	padding-left: 10px;
 	padding-bottom: 4px;
 	border-left: 1px solid #a0a0a0;
 }
-.sidebarcontainer ul.sidebar.active {
+.sidebar-container ul.sidebar.active {
 	display: block !important;
 }
+/*FOLDER BUTTON*/
 .liicon {
     display:inline-block;
     width:10px;
@@ -88,7 +99,6 @@ body {
     font-size: 12px;
     color: white;
 }
-
 li.sidebar span {
 	user-select: none;
 	cursor: pointer;
@@ -106,16 +116,12 @@ li.sidebar .spanactive {
 	background: url(/button-active.png);
 }
 
-/*GENERICS*/
+/*GENERIC*/
 a {
 	color: #ffffa0;
 }
 a:visited {
 	color: #ffffa0;
-}
-
-hr {
-    color: #404040;
 }
 
 /*

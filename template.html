@@ -5,18 +5,23 @@
 <script src="/script.js"></script>
 <link rel="stylesheet" href="/normalize.css">
 <link rel="stylesheet" href="/default.css">
+<link rel="stylesheet" href="/markdown.css">
 <link rel="stylesheet" href="/codehilite.css">
 
-<div class="topbar">
-	<img src="/Icon.png">
-	<a href="/index.html"><b>Alphabase Wiki</b></a>
-	<input id="searchbox" type="text" placeholder="search..." autocomplete="off" oninput="updateSearch();">
+<div class="topbar-container">
+	<div class="topbar">
+		<img src="/Icon.png">
+		<a href="/index.html"><b>Alphabase Wiki</b></a>
+		<input id="searchbox" type="text" placeholder="search..." autocomplete="off" oninput="updateSearch();">
+	</div>
 </div>
 <div class="page">
-	<div class="content">
-		@CONTENT
+	<div class="content-container">
+		<div class="content">
+			@CONTENT
+		</div>
 	</div>
-    <div class="sidebarcontainer">
+    <div class="sidebar-container">
 		<ul class="sidebar" id="filetree">
 			@FILETREE
 		</ul>
