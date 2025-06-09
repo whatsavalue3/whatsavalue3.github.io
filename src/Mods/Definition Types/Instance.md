@@ -31,7 +31,7 @@ Templates contain things that an instance may request to register, alongside pla
 
 Templates lack any sort of properties, instead inheriting them from subsections.
 
-Refer to [Block](Block.html), [Item](Item.html), [Recipe](Recipe.html) and [Smeltig](Smelting.html) for their respective properties.
+Refer to [Block](Block.html), [Item](Item.html), [Recipe](Recipe.html) and [Smelting](Smelting.html) for their respective properties.
 
 ## Subsections
 
