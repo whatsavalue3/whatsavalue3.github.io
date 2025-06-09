@@ -3,21 +3,24 @@
 <link rel="shortcut icon" href="/favicon.ico">
 <meta charset="UTF-8">
 <script src="/script.js"></script>
+<link rel="stylesheet" href="/normalize.css">
 <link rel="stylesheet" href="/default.css">
 <link rel="stylesheet" href="/codehilite.css">
+
 <div class="topbar">
-<img class="topbarelement" src="/Icon.png">
-<span class="searchboxcontainer" onkeyup="updateSearch();"><input class="searchbox" type="text" placeholder="search..." autocomplete="off" id="searchbox" oninput="updateSearch();" class="searchbox"></span>
+	<img src="/Icon.png">
+	<a href="/index.html"><b>Alphabase Wiki</b></a>
+	<input id="searchbox" type="text" placeholder="search..." autocomplete="off" oninput="updateSearch();">
 </div>
-<div>
+<div class="page">
+	<div class="content">
+		@CONTENT
+	</div>
     <div class="sidebarcontainer">
-        <nav>
             <ul class="sidebar sidebarroot" id="searchresults">
             </ul>
             <ul class="sidebar sidebarroot" id="filetree">
                 @FILETREE
             </ul>
-        </nav>
     </div>
-@CONTENT
 </div>

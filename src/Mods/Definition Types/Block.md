@@ -39,7 +39,7 @@ Default: `true`
 
 ### `bbox` {{t|Bbox}}
 The shape of the block.
-
+{{n|Note:|If `bbox` is not the then `opaque_cube` is forced to `false` to prevent visual artifacts.}}
 Default: `[0,0,0,1,1,1]` (full block)
 
 ---
