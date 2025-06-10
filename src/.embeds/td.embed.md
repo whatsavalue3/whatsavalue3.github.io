@@ -1,0 +1,1 @@
+$_SPANFRAME $_SMALL [$1$](../Types.html#$1$) Default: `$2$` _$ _$

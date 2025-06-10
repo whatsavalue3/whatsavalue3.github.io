@@ -116,6 +116,64 @@ li.sidebar .spanactive {
 	background: url(/button-active.png);
 }
 
+/*FRAMES*/
+
+.spanframed {
+	border: #606060 1px solid;
+	border-top-color: #ffffff;
+	border-left-color: #ffffff;
+	background-color: #404040;
+	display:inline;
+	padding-top:1px;
+	padding-bottom:1px;
+	/*
+	padding:2px;
+	padding-top:3px;
+	padding-bottom:3px;
+	*/
+}
+
+.spanframedinside {
+	border: #a0a0a0 1px solid;
+	border-top-color: #606060;
+	border-left-color: #606060;
+	/*background-color: #000000;*/
+}
+
+
+.inlineframed {
+	border: #000000 1px solid;
+	border-top-color: #ffffff;
+	border-left-color: #ffffff;
+	background-color: #808080;
+	display:block;
+	margin:4px;
+}
+
+.inlineframedinside {
+	border: #000000 1px solid;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	background-color: #000000;
+	margin:4px;
+	padding:8px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+/*CODE*/
+
+pre {
+	background-color: #000000;
+	border: 2px solid #a0a0a0;
+	padding: 2px;
+}
+
+code
+{
+	background-color: #000000;
+}
+
 /*GENERIC*/
 a {
 	color: #ffffa0;

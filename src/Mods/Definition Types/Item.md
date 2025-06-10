@@ -1,4 +1,5 @@
 # Item
+
 ## Properties
 
 ---
@@ -12,11 +13,11 @@ Required and must be unique.
 ### `texture` {{t|String}}
 Texture of the item.
 
-## Subsections
+# Subsections
 
 ---
-
-### Tool
+$_INLINEFRAME
+## Tool
 
 ---
 
@@ -39,6 +40,26 @@ The amount of times the tool can be used.
 ### `mineable_materials` {{t|StringArray}}
 Which materials the tool can mine, and is effective against.
 Array must contain valid {{t|Material}}s.
+_$
+
+$_INLINEFRAME
+## Bow
+
+---
+
+### `ammo` {{td|ID|arrow}}
+What this bow will consume as ammunition
+
+---
+
+### `ammo_velocity` {{td|Float|1.5}}
+How fast will the arrow go.
+
+---
+
+### `ammo_inaccuracy` {{td|Float|1.0}}
+What the variation in the shoot angle will be.
+_$
 
 # Examples
 Basic item example:
